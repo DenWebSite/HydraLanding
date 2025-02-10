@@ -1,0 +1,49 @@
+.intro {
+    padding-top: 100px;
+
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__content {
+        max-width: 456px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 46px;
+        margin-bottom: 36px;
+
+        span {
+            background: linear-gradient(227deg, #c0b7e8 0%, #8176af 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    &__text-block {
+        max-width: 450px;
+        margin-bottom: 66px;
+    }
+
+    &__link {
+        position: relative;
+        @include btn(none, $backgroundLink, 68px, $darkColor, 16px, 17px, 53px);
+        font-size: 12px;
+        font-weight: 700;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: url('./../../assets/icons/arrow-small-right-link.svg');
+            top: -25px;
+            right: -96px;
+        }
+    }
+}

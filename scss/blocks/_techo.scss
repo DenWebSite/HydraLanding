@@ -1,0 +1,64 @@
+.techo {
+    padding-top: 115px;
+
+    &__top {
+        position: relative;
+        box-shadow: 0 4px 4px 0 rgba(192, 183, 232, 0.01);
+    }
+
+    &__top-image {
+        position: relative;
+
+        img {
+            border-radius: 160px;
+            background-repeat: no-repeat;
+        }
+
+        .techo__top-btn{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            visibility: hidden;
+        }
+
+        .techo__top-btn:before{
+            content: '';
+            position: absolute;
+            visibility: visible;
+            width: 100px;
+            height: 100px;
+            background: url('./../../assets/icons/arrow-down.png');
+            top: -50px;
+            left: 50%;
+            transform: translate(540%, 0);
+        }
+
+    }
+}
+
+.techo__top-text {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translate(-50%, -35%);
+    left: 50%;
+    text-align: center;
+
+    h3 {
+        font-weight: 700;
+        font-size: 36px;
+        margin-bottom: 11px;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 36px;
+    }
+}
+
+.techo__bottom {
+    padding-top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

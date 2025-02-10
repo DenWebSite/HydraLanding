@@ -1,0 +1,64 @@
+.how {
+    padding-top: 69px;
+
+    &__title {
+        max-width: 320px;
+        font-weight: 300;
+        font-size: 36px;
+
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__top-text {
+        max-width: 650px;
+    }
+
+    &__bottom{
+        padding-top: 120px;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__bottom-item{
+        max-width: 250px;
+        padding: 0 54px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img{
+            width: 198px;
+            height: 198px;
+            margin-bottom: 25px;
+        }
+
+        p{
+            position: relative;
+
+            font-size: 24px;
+            font-weight: 700;
+            max-width: 200px;
+
+            &::before{
+                content: '';
+                position: absolute;
+                background: url('./../../assets/icons/how-arrow.svg');
+                width: 32px;
+                height: 27px;
+                top: 0;
+                left: -45px;
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.introduction {
+    padding-top: 90px;
+
+    &__title {
+        max-width: 290px;
+        font-weight: 300;
+        font-size: 36px;
+
+
+        span {
+            font-weight: 700;
+        }
+    }
+}
+
+.introduction__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 69px;
+}
+
+.introduction__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+
+    &-text{
+        max-width: 650px;
+    }
+}
+
+.introduction__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 117px;
+
+    &-content{
+        max-width: 600px;
+    }
+
+    &-text{
+        padding: 42px 0 50px;
+    }
+
+    &-link{
+        @include btn(transparent, $backgroundLink, 40px, #343045, 12px, 17px, 43px);
+
+        font-weight: 700;
+    }
+}
